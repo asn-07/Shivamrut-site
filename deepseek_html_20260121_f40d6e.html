@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITY FURNITURE AND HOME APPLIANCES | Premium Wooden Furniture for Indian Homes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8B4513;
+            --primary-light: #A0522D;
+            --secondary: #D4AF37;
+            --dark: #2C1810;
+            --light: #F8F5F2;
+            --gray: #6B7280;
+            --light-gray: #E5E7EB;
+            --white: #FFFFFF;
+            --steel: #4A5568;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--gray);
+        }
+
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            transition: var(--transition);
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Collections Section */
+        .collections {
+            background-color: #F9F9F9;
+        }
+
+        .collections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .collection-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .collection-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .collection-img {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .collection-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .collection-card:hover .collection-img img {
+            transform: scale(1.1);
+        }
+
+        .collection-info {
+            padding: 25px;
+        }
+
+        .collection-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .collection-info p {
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+
+        /* Wooden Elements Section */
+        .wooden-elements {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .wooden-elements .section-title h2 {
+            color: var(--white);
+        }
+
+        .wooden-elements .section-title h2:after {
+            background-color: var(--secondary);
+        }
+
+        .elements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .element-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+        }
+
+        .element-card:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .element-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .element-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .element-card p {
+            color: var(--light-gray);
+        }
+
+        /* Why Choose Us Section */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: var(--gray);
+        }
+
+        /* Steel Appliances Section */
+        .steel-appliances {
+            background-color: var(--steel);
+            color: var(--white);
+        }
+
+        .steel-appliances .section-title h2 {
+            color: var(--white);
+        }
+
+        .steel-appliances .section-title h2:after {
+            background-color: var(--secondary);
+        }
+
+        .appliances-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .appliance-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+        }
+
+        .appliance-card:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .appliance-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .appliance-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .appliance-card p {
+            color: var(--light-gray);
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .contact-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-light);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+
+        /* Google Form Container */
+        .form-container {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-container iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.8rem;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            z-index: 100;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 70px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--light-gray);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-5px);
+        }
+
+        .newsletter input {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light-gray);
+            font-size: 0.9rem;
+        }
+
+        /* Special Offers Banner */
+        .offer-banner {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 15px 0;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .offer-banner a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .about-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                background-color: var(--white);
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 0;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .section-padding {
+                padding: 70px 0;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Animation for cards */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        /* Material Tags */
+        .material-tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background-color: var(--primary-light);
+            color: var(--white);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .steel-tag {
+            background-color: var(--steel);
+        }
+    </style>
+</head>
+<body>
+    <!-- Special Offers Banner -->
+    <div class="offer-banner">
+        <div class="container">
+            <p>🎉 Special Offer: 20% off on all wooden furniture collections | Free home consultation | Easy EMI options starting at ₹1,999/month <a href="#contact">Book Now</a></p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">CITY<span>FURNITURE</span>.ART</a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#collections">Wooden Furniture</a></li>
+                <li><a href="#wooden-elements">Wooden Elements</a></li>
+                <li><a href="#appliances">Steel Appliances</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>CITY FURNITURE AND HOME APPLIANCES</h1>
+            <p>Experience luxury, comfort, and durability with our premium wooden furniture, exquisite Magani collections, and high-quality steel home appliances designed for Indian homes.</p>
+            <div class="hero-btns">
+                <a href="#collections" class="btn">Explore Wooden Furniture</a>
+                <a href="https://wa.me/919380423514?text=Hi%20City%20Furniture%20India%2C%20I%20am%20interested%20in%20your%20wooden%20furniture" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                <a href="#appliances" class="btn">Steel Appliances</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Story</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Master Craftsmanship in Wooden Furniture Since 1993</h2>
+                    <p>City Furniture India brings decades of expertise in premium wooden furniture craftsmanship to your doorstep. Established with a vision to transform Indian homes with durable and elegant furniture solutions, we combine traditional woodworking artistry with contemporary design.</p>
+                    <p>Our showroom showcases carefully curated collections of solid wood furniture, Magani designs, and premium steel home appliances. We source the finest quality teak wood, sheesham, and other premium woods to create pieces that stand the test of time and enhance your living spaces.</p>
+                    <p>Each furniture item in our collection reflects meticulous craftsmanship and attention to detail, offering both beauty and functionality for modern Indian homes.</p>
+                    <a href="#contact" class="btn">Visit Our Showroom</a>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="City Furniture Showroom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wooden Furniture Collections Section -->
+    <section class="section-padding collections" id="collections">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Wooden Furniture Collections</h2>
+            </div>
+            <div class="collections-grid">
+                <!-- Wooden Cot -->
+                <div class="collection-card fade-in">
+                    <div class="collection-img">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Wooden Cot">
+                    </div>
+                    <div class="collection-info">
+                        <span class="material-tag">Solid Wood</span>
+                        <span class="material-tag">Handcrafted</span>
+                        <h3>Wooden Cots & Beds</h3>
+                        <p>Our solid wood cots are crafted for comfort, durability, and traditional Indian designs. Available in various sizes and designs with carved details and premium finishes.</p>
+                        <a href="#contact" class="btn" style="padding: 10px 20px; font-size: 14px;">Enquire Now</a>
+                    </div>
+                </div>
+                
+                <!-- Wooden Sofa -->
+                <div class="collection-card fade-in">
+                    <div class="collection-img">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Wooden Sofa">
+                    </div>
+                    <div class="collection-info">
+                        <span class="material-tag">Teak Wood</span>
+                        <span class="material-tag">Upholstered</span>
+                        <h3>Wooden Sofas</h3>
+                        <p>Luxurious wooden sofas with premium upholstery, hand-carved details, and comfortable seating. Perfect for Indian living rooms with traditional and modern designs.</p>
+                        <a href="#contact" class="btn" style="padding: 10px 20px; font-size: 14px;">Enquire Now</a>
+                    </div>
+                </div>
+                
+                <!-- Wooden Chair -->
+                <div class="collection-card fade-in">
+                    <div class="collection-img">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80" alt="Wooden Chair">
+                    </div>
+                    <div class="collection-info">
+                        <span class="material-tag">Sheesham Wood</span>
+                        <span class="material-tag">Ergonomic</span>
+                        <h3>Wooden Chairs</h3>
+                        <p>Elegant wooden chairs for dining, office, and living areas. Handcrafted from premium sheesham wood with comfortable designs and durable construction.</p>
+                        <a href="#contact" class="btn" style="padding: 10px 20px; font-size: 14px;">Enquire Now</a>
+                    </div>
+                </div>
+                
+                <!-- Wooden Wardrobe -->
+                <div class="collection-card fade-in">
+                    <div class="collection-img">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80" alt="Wooden Wardrobe">
+                    </div>
+                    <div class="collection-info">
+                        <span class="material-tag">Modular Design</span>
+                        <span class="material-tag">Ample Storage</span>
+                        <h3>Wooden Wardrobes</h3>
+                        <p>Custom-designed wooden wardrobes with modular storage solutions, mirror fittings, and premium finishes. Built to maximize space in Indian bedrooms.</p>
+                        <a href="#contact" class="btn" style="padding: 10px 20px; font-size: 14px;">Enquire Now</a>
+                    </div>
+                </div>
+                
+                <!-- Wooden Dining Set -->
+                <div class="collection-card fade-in">
+                    <div class="collection-img">
+                        <img src="https://images.unsplash.com/photo-1617802690992-15d93263d3c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Wooden Dining Set">
+                    </div>
+                    <div class="collection-info">
+                        <span class="material-tag">Family Size</span>
+                        <span class="material-tag">6-8 Seater</span>
+                        <h3>Wooden Dining Sets</h3>
+                        <p>Complete wooden dining sets with extendable tables and comfortable chairs. Perfect for Indian family dining with traditional carvings and modern functionality.</p>
+                        <a href="#contact" class="btn" style="padding: 10px 20px; font-size: 14px;">Enquire Now</a>
+                    </div>
+                </div>
+                
+                <!-- Wooden Center Table -->
+                <div class="collection-card fade-in">
+                    <div class="collection-img">
+                        <img src="https://images.unsplash.com/photo-1594818379496-1d5d1c4a1289?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Wooden Center Table">
+                    </div>
+                    <div class="collection-info">
+                        <span class="material-tag">Carved Design</span>
+                        <span class="material-tag">Storage Space</span>
+                        <h3>Wooden Center Tables</h3>
+                        <p>Beautifully carved wooden center tables with storage space and glass tops. Enhances living room aesthetics while providing practical utility.</p>
+                        <a href="#contact" class="btn" style="padding: 10px 20px; font-size: 14px;">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wooden Elements Section -->
+    <section class="section-padding wooden-elements" id="wooden-elements">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Wooden Elements</h2>
+            </div>
+            <div class="elements-grid">
+                <div class="element-card fade-in">
+                    <div class="element-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Solid Wood Frames</h3>
+                    <p>Durable wooden frames for beds, sofas, and chairs with traditional joinery techniques for enhanced strength and longevity.</p>
+                </div>
+                
+                <div class="element-card fade-in">
+                    <div class="element-icon">
+                        <i class="fas fa-grip-lines"></i>
+                    </div>
+                    <h3>Hand Carvings</h3>
+                    <p>Intricate hand carvings on furniture pieces featuring traditional Indian motifs, floral patterns, and geometric designs.</p>
+                </div>
+                
+                <div class="element-card fade-in">
+                    <div class="element-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Wood Inlay Work</h3>
+                    <p>Beautiful wood inlay work using different wood types to create contrasting patterns and designs on tabletops and cabinets.</p>
+                </div>
+                
+                <div class="element-card fade-in">
+                    <div class="element-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Natural Wood Finishes</h3>
+                    <p>Eco-friendly natural wood finishes that enhance the grain while protecting the wood from moisture and wear.</p>
+                </div>
+                
+                <div class="element-card fade-in">
+                    <div class="element-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Traditional Joinery</h3>
+                    <p>Mortise and tenon joints, dovetail joints, and other traditional woodworking techniques for furniture that lasts generations.</p>
+                </div>
+                
+                <div class="element-card fade-in">
+                    <div class="element-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3>Custom Measurements</h3>
+                    <p>Furniture customized to your exact space requirements with precise measurements for perfect fit in Indian homes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-padding" id="why">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose City Furniture India?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>100% Solid Wood</h3>
+                    <p>We use only premium quality solid wood, known for its durability, natural beauty, and resistance to termites and decay.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Expert Craftsmanship</h3>
+                    <p>Traditional woodworking techniques combined with modern design principles for furniture that lasts generations.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3>Custom Design Solutions</h3>
+                    <p>Tailored to your space, preferences, and specific requirements with precise measurements and personalized designs.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Three Decades of Excellence</h3>
+                    <p>Serving customers since 1993 with unparalleled expertise in wooden furniture and home appliances.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Timely Delivery & Installation</h3>
+                    <p>Professional delivery and setup services across the city with careful handling of your premium furniture.</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>10-Year Warranty</h3>
+                    <p>Comprehensive warranty on all wooden furniture against termite damage and structural issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steel Appliances Section -->
+    <section class="section-padding steel-appliances" id="appliances">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Steel Home Appliances</h2>
+            </div>
+            <div class="appliances-grid">
+                <div class="appliance-card fade-in">
+                    <div class="appliance-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Stainless Steel Kitchen Cabinets</h3>
+                    <p>Hygienic, durable, and easy-to-clean stainless steel kitchen cabinets with modular designs and smart storage solutions.</p>
+                </div>
+                
+                <div class="appliance-card fade-in">
+                    <div class="appliance-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Steel Storage Units</h3>
+                    <p>Premium steel storage units for kitchen, pantry, and utility areas with powder-coated finishes for enhanced durability.</p>
+                </div>
+                
+                <div class="appliance-card fade-in">
+                    <div class="appliance-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <h3>Steel Refrigerator Cabinets</h3>
+                    <p>Custom-built steel cabinets designed to house refrigerators seamlessly within your kitchen layout.</p>
+                </div>
+                
+                <div class="appliance-card fade-in">
+                    <div class="appliance-icon">
+                        <i class="fas fa-sink"></i>
+                    </div>
+                    <h3>Steel Sink Units</h3>
+                    <p>Stainless steel sink units with integrated drainage systems and durable countertops for modern kitchens.</p>
+                </div>
+                
+                <div class="appliance-card fade-in">
+                    <div class="appliance-icon">
+                        <i class="fas fa-archive"></i>
+                    </div>
+                    <h3>Modular Steel Shelving</h3>
+                    <p>Adjustable steel shelving systems for organized storage in kitchens, pantries, and utility areas.</p>
+                </div>
+                
+                <div class="appliance-card fade-in">
+                    <div class="appliance-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Steel Chimney & Hob Units</h3>
+                    <p>Integrated steel chimney and hob cabinets with efficient ventilation systems for smoke-free cooking.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#contact" class="btn" style="padding: 15px 40px;">Get Quote for Steel Appliances</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Visit Our Experience Center</h3>
+                    <p>Step into our 10,000 sq.ft. showroom located in the heart of the city. Experience our furniture in beautifully designed room settings that inspire your own home transformation.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>City Furniture India, Commercial Street, Dharwad, Karnataka - 580001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 93804 23514</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>cityfuniture.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Showroom Hours</h4>
+                                <p>Monday-Sunday: 10:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-top: 30px;">Direct WhatsApp Group</h3>
+                    <p>Join our WhatsApp group for exclusive offers, new collection updates, and direct consultation:</p>
+                    <a href="https://chat.whatsapp.com/yourgroupinvitelink" class="btn btn-whatsapp" target="_blank" style="margin-top: 15px;"><i class="fab fa-whatsapp"></i> Join WhatsApp Group</a>
+                </div>
+                
+                <div class="form-container fade-in">
+                    <h3>Send Us Your Requirements</h3>
+                    <p>Fill out the form below and our design consultant will contact you within 24 hours:</p>
+                    
+                    <!-- Google Form Integration -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfexample_viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <p><small>Note: This is a sample form. Replace the iframe src with your actual Google Form URL.</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919380423514?text=Hi%20City%20Furniture%20India%2C%20I%20am%20interested%20in%20your%20wooden%20furniture" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>CITY FURNITURE INDIA</h3>
+                    <p>Where Quality Meets Design. Transforming spaces and enhancing lives with premium furniture since 1993.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#collections">Wooden Furniture</a></li>
+                        <li><a href="#wooden-elements">Wooden Elements</a></li>
+                        <li><a href="#appliances">Steel Appliances</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Collections</h3>
+                    <ul class="footer-links">
+                        <li><a href="#collections">Wooden Cots</a></li>
+                        <li><a href="#collections">Wooden Sofas</a></li>
+                        <li><a href="#collections">Wooden Chairs</a></li>
+                        <li><a href="#collections">Wooden Wardrobes</a></li>
+                        <li><a href="#collections">Dining Sets</a></li>
+                        <li><a href="#appliances">Steel Appliances</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates on new collections, exclusive offers, and design tips.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email address">
+                        <button class="btn" style="width: 100%; padding: 12px;">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 CITY FURNITURE INDIA. All rights reserved. | ISO Certified | Green Material Certified</p>
+                <p>Payment Methods: All major credit/debit cards, EMI options, UPI, Net Banking</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all elements with the fade-in class
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Update year in copyright
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearSpan = document.querySelector('.copyright');
+            if(yearSpan) {
+                const currentYear = new Date().getFullYear();
+                yearSpan.innerHTML = yearSpan.innerHTML.replace('2023', currentYear);
+            }
+        });
+    </script>
+</body>
+</html>
